@@ -67,12 +67,11 @@ button {
 
 .page {
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 }
 
 .content {
 	padding-inline: 30px;
-	padding-block: 133px;
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
