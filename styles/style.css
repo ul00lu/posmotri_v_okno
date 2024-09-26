@@ -9,13 +9,13 @@ html {
 }
 
 .page {
-	inline-size: 1200px;
-	block-size: 100%;
 	margin: auto;
 	color: #fff;
 	font-family: 'Fira Sans Condensed', sans-serif;
 	font-size: 18px;
 	background-color: #1b1919;
+	inline-size: 1200px;
+	block-size: 100%;
 }
 
 h1,
@@ -46,19 +46,19 @@ fieldset {
 }
 
 button {
+	border: 1px solid #fff;
+	color: #fff;
 	font-family: Oswald, sans-serif;
 	font-weight: 700;
-	color: #fff;
-	background-color: transparent;
-	border: 1px solid #fff;
 	font-size: 18px;
+	background-color: transparent;
 	cursor: pointer;
 }
 
 button:hover {
-	cursor: pointer;
 	text-decoration: underline;
 	text-underline-offset: 3px;
+	cursor: pointer;
 }
 
 button:active {
@@ -75,10 +75,10 @@ button:focus-visible {
 
 .visually-hidden {
 	position: absolute;
-	inline-size: 1px;
-	block-size: 1px;
 	overflow: hidden;
 	clip: rect(0 0 0 0);
+	inline-size: 1px;
+	block-size: 1px;
 	clip-path: inset(50%);
 	white-space: nowrap;
 }
@@ -89,13 +89,13 @@ button:focus-visible {
 }
 
 .content {
-	padding-inline: 30px;
-	width: 100%;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
 	column-gap: 30px;
+	width: 100%;
+	margin: 0 auto;
+	padding-inline: 30px;
 }
 
 .result {
@@ -106,8 +106,8 @@ button:focus-visible {
 
 .search-form {
 	display: flex;
-	column-gap: 40px;
 	align-items: flex-end;
+	column-gap: 40px;
 }
 
 .content__list {
@@ -117,11 +117,11 @@ button:focus-visible {
 }
 
 .content__details {
-	width: 100%;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	row-gap: 26px;
+	width: 100%;
+	height: 100%;
 }
 
 .result__video-container {
@@ -156,9 +156,9 @@ button:focus-visible {
 }
 
 .search-form__fieldset-title {
+	margin-bottom: 5px;
 	font-weight: 400;
 	font-size: 18px;
-	margin-bottom: 5px;
 }
 
 .content__accent {
@@ -166,23 +166,23 @@ button:focus-visible {
 }
 
 .title {
-	text-transform: uppercase;
 	font-family: Oswald, sans-serif;
 	font-weight: 700;
 	font-size: 75px;
 	line-height: 92%;
+	text-transform: uppercase;
 }
 
 .content__card-link {
-	text-decoration: none;
 	color: #fff;
+	text-decoration: none;
 }
 
 .content__video-card-title {
 	font-family: Oswald, sans-serif;
-	text-transform: uppercase;
 	font-size: 30px;
 	line-height: 144%;
+	text-transform: uppercase;
 }
 
 .content__video-card-description {
@@ -191,21 +191,21 @@ button:focus-visible {
 
 .search-form__textfield {
 	min-width: 225px;
-	appearance: none;
-	padding-inline-end: 14px;
-	background-color: transparent;
 	border: none;
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
-	font-family: 'Fira Sans Condensed', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
+	padding-inline-end: 14px;
 	color: #fff;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	background-color: transparent;
+	appearance: none;
 }
 
 .search-form__textfield::placeholder {
-	color: #fff;
 	opacity: 0.7;
+	color: #fff;
 	font-weight: 400;
 }
 
@@ -223,12 +223,12 @@ button:focus-visible {
 }
 
 .search-form__submit-button {
-	padding: 4px 73.5px;
 	margin-left: auto;
+	padding: 4px 73.5px;
 }
 .more-button {
-	padding: 4px 0;
 	width: 100%;
+	padding: 4px 0;
 }
 
 /* Стилизация чекбоксов */
@@ -252,27 +252,27 @@ button:focus-visible {
 input[type='checkbox'] + span {
 	position: relative;
 	display: inline-flex;
-	align-items: center;
 	justify-content: center;
-	vertical-align: middle;
+	align-items: center;
 	width: 19px;
 	height: 19px;
-	background-color: transparent;
 	border: 1px solid #fff;
+	vertical-align: middle;
+	background-color: transparent;
 }
 
 input[type='checkbox']:checked + span::before {
 	content: '';
-
+	position: absolute;
 	width: 15px;
 	height: 15px;
 	background-color: #fff;
 }
 
 .search-form__label:hover input[type='checkbox'] + span + span {
-	cursor: pointer;
 	text-decoration: underline;
 	text-underline-offset: 3px;
+	cursor: pointer;
 }
 
 /* редактирование карточки*/
