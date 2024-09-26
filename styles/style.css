@@ -233,6 +233,11 @@ button:focus-visible {
 
 /* Стилизация чекбоксов */
 
+.search-form__checkbox-list {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 5px;
+}
 .search-form__label {
 	display: inline-flex;
 	align-items: center;
@@ -250,7 +255,6 @@ button:focus-visible {
 }
 
 input[type='checkbox'] + span {
-	position: relative;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -263,9 +267,9 @@ input[type='checkbox'] + span {
 
 input[type='checkbox']:checked + span::before {
 	content: '';
-	position: absolute;
-	width: 15px;
-	height: 15px;
+	display: inline;
+	width: 14px;
+	height: 14px;
 	background-color: #fff;
 }
 
