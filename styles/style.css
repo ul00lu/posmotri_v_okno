@@ -38,7 +38,7 @@ ol {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 }
 
 fieldset {
@@ -46,13 +46,13 @@ fieldset {
 }
 
 button {
-	padding: 4px 73.5px;
 	font-family: Oswald, sans-serif;
 	font-weight: 700;
 	color: #fff;
 	background-color: transparent;
 	border: 1px solid #fff;
 	font-size: 18px;
+	cursor: pointer;
 }
 
 .visually-hidden {
@@ -88,8 +88,7 @@ button {
 
 .search-form {
 	display: flex;
-	column-gap: 10px;
-	justify-content: space-between;
+	column-gap: 40px;
 	align-items: flex-end;
 }
 
@@ -130,8 +129,8 @@ button {
 }
 
 .content__video-card-thumbnail {
-	width: 194px;
-	height: 103px;
+	width: 197px;
+	height: 105px;
 }
 
 .content__video-card-description-container {
@@ -165,7 +164,7 @@ button {
 	font-family: Oswald, sans-serif;
 	text-transform: uppercase;
 	font-size: 30px;
-	line-height: 100%;
+	line-height: 144%;
 }
 
 .content__video-card-description {
@@ -190,4 +189,13 @@ button {
 	color: #fff;
 	opacity: 0.7;
 	font-weight: 400;
+}
+
+.search-form__submit-button {
+	padding: 4px 73.5px;
+	margin-left: auto;
+}
+.more-button {
+	padding: 4px 0;
+	width: 100%;
 }
