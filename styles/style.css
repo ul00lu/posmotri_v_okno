@@ -55,6 +55,24 @@ button {
 	cursor: pointer;
 }
 
+button:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+button:active {
+	background-color: #545050;
+}
+
+button:focus {
+	outline: none;
+}
+button:focus-visible {
+	outline: 1px solid #fff;
+	outline-offset: 2px;
+}
+
 .visually-hidden {
 	position: absolute;
 	inline-size: 1px;
@@ -191,6 +209,19 @@ button {
 	font-weight: 400;
 }
 
+.search-form__textfield:active {
+	border: 1px solid #fff;
+}
+
+.search-form__textfield:focus {
+	outline: none;
+}
+
+.search-form__textfield:focus-visible {
+	outline: 1px solid #fff;
+	outline-offset: 1px;
+}
+
 .search-form__submit-button {
 	padding: 4px 73.5px;
 	margin-left: auto;
@@ -198,4 +229,64 @@ button {
 .more-button {
 	padding: 4px 0;
 	width: 100%;
+}
+
+/* Стилизация чекбоксов */
+
+.search-form__label {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 5px;
+}
+
+.search-form__label:focus {
+	outline: none;
+}
+.search-form__label:focus-visible {
+	overflow: 1px solid #fff;
+}
+.search-form__label:not(:last-child) {
+	margin-right: 10px;
+}
+
+input[type='checkbox'] + span {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+	width: 19px;
+	height: 19px;
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+input[type='checkbox']:checked + span::before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+}
+
+.search-form__label:hover input[type='checkbox'] + span + span {
+	cursor: pointer;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+/* редактирование карточки*/
+.content__card-link {
+	display: block;
+}
+.content__card-link_current {
+	background-color: #545050;
+}
+.content__list-item:active {
+	background-color: #545050;
+}
+
+.content__list-item:hover {
+	text-decoration: underline;
+	text-underline-offset: 4px;
 }
