@@ -48,7 +48,7 @@ fieldset {
 button {
 	border: 1px solid #fff;
 	color: #fff;
-	font-family: Oswald, sans-serif;
+	font-family: inherit;
 	font-weight: 700;
 	font-size: 18px;
 	background-color: transparent;
@@ -68,6 +68,7 @@ button:active {
 button:focus {
 	outline: none;
 }
+
 button:focus-visible {
 	outline: 1px solid #fff;
 	outline-offset: 2px;
@@ -196,7 +197,7 @@ button:focus-visible {
 	border-bottom: 1px solid #fff;
 	padding-inline-end: 14px;
 	color: #fff;
-	font-family: 'Fira Sans Condensed', sans-serif;
+	font-family: inherit;
 	font-weight: 400;
 	font-size: 18px;
 	background-color: transparent;
@@ -226,6 +227,7 @@ button:focus-visible {
 	margin-left: auto;
 	padding: 4px 73.5px;
 }
+
 .more-button {
 	width: 100%;
 	padding: 4px 0;
@@ -238,6 +240,7 @@ button:focus-visible {
 	align-items: flex-start;
 	column-gap: 5px;
 }
+
 .search-form__label {
 	display: inline-flex;
 	align-items: center;
@@ -247,9 +250,11 @@ button:focus-visible {
 .search-form__label:focus {
 	outline: none;
 }
+
 .search-form__label:focus-visible {
 	overflow: 1px solid #fff;
 }
+
 .search-form__label:not(:last-child) {
 	margin-right: 10px;
 }
@@ -280,17 +285,20 @@ input[type='checkbox']:checked + span::before {
 }
 
 /* редактирование карточки*/
+
 .content__card-link {
 	display: block;
 }
+
 .content__card-link_current {
 	background-color: #545050;
 }
-.content__list-item:active {
+
+.content__card-link:active {
 	background-color: #545050;
 }
 
-.content__list-item:hover {
+.content__card-link:hover {
 	text-decoration: underline;
 	text-underline-offset: 4px;
 }
