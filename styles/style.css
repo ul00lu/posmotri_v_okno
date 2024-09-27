@@ -114,7 +114,7 @@ button:focus-visible {
 .content__list {
 	position: relative;
 	height: 298px;
-	overflow: auto;
+	overflow-y: auto;
 }
 
 .content__details {
@@ -148,8 +148,8 @@ button:focus-visible {
 }
 
 .content__video-card-thumbnail {
-	width: 197px;
-	height: 105px;
+	width: 194px;
+	height: 103px;
 }
 
 .content__video-card-description-container {
@@ -181,7 +181,7 @@ button:focus-visible {
 
 .content__video-card-title {
 	font-family: Oswald, sans-serif;
-	font-size: 30px;
+	font-size: 28px;
 	line-height: 144%;
 	text-transform: uppercase;
 }
@@ -245,14 +245,12 @@ button:focus-visible {
 	display: inline-flex;
 	align-items: center;
 	column-gap: 5px;
+	cursor: pointer;
 }
 
-.search-form__label:focus {
-	outline: none;
-}
-
-.search-form__label:focus-visible {
-	overflow: 1px solid #fff;
+.search-form__label:has(:focus-visible) {
+	outline: 1px solid #fff;
+	outline-offset: 1px;
 }
 
 .search-form__label:not(:last-child) {
@@ -281,7 +279,6 @@ input[type='checkbox']:checked + span::before {
 .search-form__label:hover input[type='checkbox'] + span + span {
 	text-decoration: underline;
 	text-underline-offset: 3px;
-	cursor: pointer;
 }
 
 /* редактирование карточки*/
@@ -302,3 +299,4 @@ input[type='checkbox']:checked + span::before {
 	text-decoration: underline;
 	text-underline-offset: 4px;
 }
+/* АААААААААААААААААааа Я не увидел развернутого комментария к проекту))) */
